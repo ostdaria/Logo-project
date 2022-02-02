@@ -1,7 +1,3 @@
-.breadcrumb {
-  
-}
-
 .breadcrumb__holder {
   padding: 16px 0;
 }
@@ -13,8 +9,22 @@
   line-height: 20px;
   text-decoration: none;
   color: @basic-black;
+  
+  &:active {
+    color: @basic-light-grey;
+  }
+
+  &:hover  {
+    color: @basic-black;
+  }
 }
 
 .breadcrumb__item-main {
   color: @basic-grey;
+}
+
+@media (min-width: @desktop-width) {
+  .breadcrumb__holder {
+    padding: 0;
+  }
 }

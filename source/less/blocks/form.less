@@ -19,6 +19,53 @@
   height: 50px;
   width: 285px;
   padding: 0;
+  color: @basic-grey;
+
+  &::placeholder {
+    align-items: flex-start;
+  }
+}
+
+.form__item--select {
+  position: relative;
+  z-index: -1;
+
+  &::before {
+    content: "";
+    top: 17px;
+    right: 10px;
+    position: absolute;
+    display: block;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    z-index: 5;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+  }
+}
+
+.form__input--select {
+  appearance: none;
+  position: relative;
+  z-index: -1;
+}
+
+.form__input--address {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  border-bottom: 1px solid @basic-grey;
+  height: 50px;
+  width: 285px;
+  padding: 0;
+  resize: none;
+
+  &::placeholder {
+    color: @basic-black;
+  }
 }
 
 .form__option {
@@ -27,11 +74,30 @@
   line-height: 14px;
 }
 
-.form__input::placeholder {
-  align-items: flex-start;
-}
+@media (min-width: @desktop-width) {
+  .form__image {
+    display: none;
+  }
 
-.form__input--address::placeholder {
-  color: @basic-black;
-}
+  .form {
+    padding: 20px 20px;
+  }
 
+  .form__input {
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid @basic-grey;
+    height: 50px;
+    width: 515px;
+  }
+
+  .form__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__input--name,
+  .form__input--phone {
+    width: 235px;
+  }
+}

@@ -20,6 +20,11 @@
   margin: 0;
 }
 
+.cart__image {
+  width: 80px;
+  height: 80px;
+}
+
 .cart__text {
   font-size: 26px;
   font-weight: bold;
@@ -92,7 +97,6 @@
   display: flex;
   flex-direction: column;
   justify-content: left;
-  
 }
 
 .cart__button-delete {
@@ -100,6 +104,14 @@
   color: @basic-grey;
   margin-top: 50px;
   text-align: right;
+  
+  &:active {
+    color: @basic-light-grey;
+  }
+
+  &:hover  {
+    color: @basic-black;
+  }
 }
 
 .cart__total-holder {
@@ -114,7 +126,7 @@
 }
 
 .cart__button-link {
-  width: 288px;
+  width: 286px;
   height: 60px;
   background: none;
   text-align: center;
@@ -122,4 +134,115 @@
   font-weight: bold;
   line-height: 25px;
   border: 1px solid @basic-black;
+  
+  &:hover {
+    border: 1px solid @basic-grey;
+    color: @basic-grey;
+  }
+
+  &:active {
+    border: 1px solid @basic-light-grey;
+    color: @basic-light-grey;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cart {
+    padding: 20px 20px;
+  }
+
+
+  .cart__item:first-child::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .cart__item {
+    padding: 0;
+    margin: 34px 0;
+    gap: 24px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -19px;
+      bottom: 0;
+      height: 1px;
+      background: @basic-light-grey;
+      width: 100%;
+    }
+  }
+
+  .cart__title {
+    font-size: 20px;
+  }
+
+  .cart__slogan {
+    display: block;
+    color: @basic-grey;
+    font-size: 16px;
+
+  }
+
+  .cart__total-text {
+    font-size: 28px;
+  }
+
+  .cart__product-price {
+    font-size: 20px;
+  }
+
+  .cart__image-holder {
+    margin: 0;
+    padding: 0;
+  }
+
+  .cart__image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cart__input {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .cart__button-delete {
+    margin-top: auto;
+  }
+
+  .cart__button-increase {
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    left: 62px;
+  }
+
+  .cart__total-holder {
+    display: none;
+  }
+
+  .cart__button-link {
+    width: 503px;
+    height: 60px;
+    background: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    border: 1px solid @basic-black;
+    
+    &:hover {
+      border: 1px solid @basic-grey;
+      color: @basic-grey;
+    }
+  
+    &:active {
+      border: 1px solid @basic-light-grey;
+      color: @basic-light-grey;
+    }
+  }
 }

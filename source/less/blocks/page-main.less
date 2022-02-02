@@ -44,7 +44,38 @@
   align-items: center;
   font-size: 16px;
   line-height: 18px;
+
+  &:active {
+    color: @basic-light-grey;
+  }
+
+  &:hover  {
+    color: @basic-black;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .page-main__wrapper {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  .page-main__title {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 46px;
+  }
+
+  .page-main__holder {
+    padding: 20px 20px;
+  }
+
+  .page-main__box {
+    // position: absolute;
+    // top: 20px;
+    padding: 20px 20px;
+  }
 }
