@@ -4,10 +4,31 @@
 
 @media (min-width: @desktop-width) {
   .map {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .map__image {
+    display: block;
+    position: relative;
+    bottom: 90px;
+    z-index: 1;
+  }
+
+  .map__total-visible {
     display: flex;
+    justify-content: space-between;
+    background-color: @basic-black-opacity;
+    padding: 0 30px;
+    position: relative;
+    bottom: 219px;
+    z-index: 5;
+  }
+
+  .map__total-text {
+    color: @basic-white;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 46px;
   }
 }
