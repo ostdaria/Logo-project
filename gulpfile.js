@@ -12,7 +12,9 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const browserSync = require("browser-sync");
 const sync = require("browser-sync").create();
+const fileinclude = require("gulp-file-include");
 
 // Styles
 
@@ -45,11 +47,19 @@ const html = () => {
 
 const scripts = () => {
   return gulp.src("source/js/script.js")
-    .pipe(terser())
-    .pipe(rename("script.min.js"))
+    .pipe(fileinclude())
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
+
+// const scripts = () => {
+//   return gulp.src("source/js/script.js")
+//     .pipe(terser())
+//     .pipe(rename("script.min.js"))
+//     .pipe(gulp.dest("build/js"))
+//     .pipe(sync.stream())
+//     .pipe();
+// }
 
 exports.scripts = scripts;
 

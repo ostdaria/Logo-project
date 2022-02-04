@@ -49,14 +49,14 @@
                     <svg width="24" height="27" viewbox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M23 26V23.2222C23 21.7488 22.4205 20.3357 21.3891 19.2939C20.3576 18.252 18.9587 17.6667 17.5 17.6667H6.5C5.04131 17.6667 3.64236 18.252 2.61091 19.2939C1.57946 20.3357 1 21.7488 1 23.2222V26" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       <path d="M12 12.1111C15.0376 12.1111 17.5 9.6238 17.5 6.55556C17.5 3.48731 15.0376 1 12 1C8.96243 1 6.5 3.48731 6.5 6.55556C6.5 9.6238 8.96243 12.1111 12 12.1111Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg> 
+                    </svg>
                   </a>
                 </li>
                 <li class="navigation__item">
                   <a class="navigation__link navigation__link--save" href="#">
                     <svg width="30" height="27" viewbox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M26.8409 3.21018C26.1568 2.50949 25.3445 1.95365 24.4504 1.57442C23.5563 1.19519 22.598 1 21.6302 1C20.6625 1 19.7042 1.19519 18.8101 1.57442C17.916 1.95365 17.1037 2.50949 16.4195 3.21018L14.9996 4.66368L13.5798 3.21018C12.1978 1.7955 10.3234 1.00073 8.36905 1.00073C6.41466 1.00073 4.54031 1.7955 3.15835 3.21018C1.77638 4.62487 1 6.54359 1 8.54426C1 10.5449 1.77638 12.4637 3.15835 13.8783L4.57823 15.3318L14.9996 26L25.4211 15.3318L26.8409 13.8783C27.5254 13.178 28.0684 12.3464 28.4389 11.4312C28.8093 10.5159 29 9.53496 29 8.54426C29 7.55356 28.8093 6.57258 28.4389 5.65734C28.0684 4.7421 27.5254 3.91054 26.8409 3.21018V3.21018Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg> 
+                    </svg>
                   </a>
                 </li>
                 <li class="navigation__item">
@@ -125,29 +125,29 @@
                 <div class="form__box">
                   <div class="form__item">
                     <label class="form__label visually-hidden" for="name-input">Ваше Имя</label>
-                    <input class="form__input form__input--name" type="text" id="name-input" name="name" placeholder="Ваше Имя" required> 
+                    <input class="form__input form__input--name" type="text" id="name-input" name="name" placeholder="Ваше Имя" required>
                   </div>
                   <div class="form__item">
-                    <label class="form__label visually-hidden" for="number-input">Ваш Телефон</label>
-                    <input class="form__input form__input--phone" type="text" id="number-input" name="phone-number" placeholder="Ваш Телефон" required> 
+                    <label class="form__label visually-hidden" for="phone-input">Ваш Телефон</label>
+                    <input class="form__input form__input--phone" type="text" id="phone-input" name="phone-number" placeholder="Ваш Телефон" required>
                   </div>
                 </div>
                 <div class="form__item">
                   <label class="form__label visually-hidden" for="email-input">Ваш Email</label>
-                  <input class="form__input form__input--email" type="text" id="email-input" name="email" placeholder="Ваш Email" required> 
+                  <input class="form__input form__input--email" type="text" id="email-input" name="email" placeholder="Ваш Email" required>
                 </div>
                 <div class="form__item form__item--select">
-                  <label class="form__label visually-hidden" for="type-packaging">Тип упаковки</label>
-                  <select class="form__input form__input--select" name="packaging" id="type-packaging" required>
-                    <option class="form__option form__option--type" value="" disabled selected style="display:none">Тип упаковки</option>
-                    <option class="form__option" value="">Без упаковки</option>
-                    <option class="form__option" value="">Стандартная</option>
-                    <option class="form__option" value="">Подарочная</option>
+                  <label class="form__label visually-hidden" for="type-packaging-input">Тип упаковки</label>
+                  <select class="form__input form__input--select" name="packaging" id="type-packaging-input" required>
+                    <option class="form__option form__option--type" value="Тип упаковки" disabled selected style="display: none;">Тип упаковки</option>
+                    <option class="form__option" value="Без упаковки">Без упаковки</option>
+                    <option class="form__option" value="Стандартная">Стандартная</option>
+                    <option class="form__option" value="Подарочная">Подарочная</option>
                   </select>
                 </div>
                 <div class="form__item">
                   <label class="form__label visually-hidden" for="comment-input">Введите комментарий</label>
-                  <input class="form__input" type="text" id="comment-input" name="comment" placeholder="Введите комментарий"> 
+                  <input class="form__input form__input--comment" type="text" id="comment-input" name="comment" placeholder="Введите комментарий">
                 </div>
               </div>
               <div class="cart">
@@ -206,7 +206,7 @@
                               <svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <line y1="8" x2="16" y2="8" stroke="black" stroke-width="2"/>
                                 <line x1="8" y1="16" x2="8" stroke="black" stroke-width="2"/>
-                              </svg>                         
+                              </svg>
                             </button>
                           </div>
                         </div>
@@ -275,6 +275,7 @@
 
     <footer>
     </footer>
-    <script src="js/script.min.js"></script>
+    <!-- <script src="js/script.min.js"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>
