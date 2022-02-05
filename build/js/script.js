@@ -14,7 +14,7 @@ mainNavToggle.addEventListener("click", function() {
 });
 
 
-var formElement = document.querySelector(".form");
+var formElement = document.querySelector("#userForm");
 var buttonSubmit = document.querySelector(".cart__button-link");
 
 function getFormData (name, phone, email, packaging, address, comment, productFirst, productSecond, productThirth) {
@@ -27,11 +27,11 @@ function getFormData (name, phone, email, packaging, address, comment, productFi
 
 function submitHandler(e) {
   e.preventDefault();
-  var userName = document.querySelector(".form__input--name").value;
-  var userPhone = document.querySelector(".form__input--phone").value;
-  var userEmail = document.querySelector(".form__input--email").value;
-  var userPacking = document.querySelector(".form__input--select").value;
-  var userAddress = document.querySelector(".form__input--address").value;
+  var userName = document.querySelector("#name-input").value;
+  var userPhone = document.querySelector("#phone-input").value;
+  var userEmail = document.querySelector("#email-input").value;
+  var userPacking = document.querySelector("#type-packaging-input").value;
+  var userAddress = document.querySelector("#address-input").value;
   var userComment = document.querySelector("#comment-input").value;
   var productFirst = document.querySelector("#count-first-product").value;
   var productSecond = document.querySelector("#count-second-product").value;
